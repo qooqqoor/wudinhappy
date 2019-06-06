@@ -12,6 +12,9 @@
 
 body{
 	font-family:SentyGoldenBell;
+	overflow-y: scroll;
+overflow-x: hidden;
+
 }
 section {
 
@@ -57,10 +60,9 @@ hr{
 	
 	
 }
-.btn {
+.bt {
 
-  float: right;
-
+ 
  
 	margin: 1vw;
 
@@ -74,6 +76,21 @@ hr{
   
 
 }
+.bt1{
+
+
+ 
+	margin: 1vw;
+
+  color: #000;
+
+  transform:scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(120,122,122,0.5);
+  box-shadow: 3px 3px 3px rgba(255,255,255,0.5);
+  letter-spacing: 2px;
+
+}
 .btn a{
 
 
@@ -82,25 +99,48 @@ hr{
 	background-color: rgba(255,255,255,0.0);
 	color: rgba(255,255,255,0.0);
 	border-style:none; 
-	opacity: 0.5;
+	opacity: 0.8;
+	filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.8));
+
 }
 .card:hover{
 	
 	color: rgba(0,0,0,1);
 	text-shadow: 0 0 0.2em #0af, 0 0 0.2em #0cf;
 	opacity: 1;
-}
 
+}
+.fire{
+	
+	position:absolute;
+	height: 100vh;
+}
+.fire:hover{
+	
+}
 .card-img-top{
--webkit-clip-path: circle(40% at 50% 50%);
-clip-path: circle(40% at 50% 50%);
-
+-webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
 
 }
-.btn:hover {
+.btn{
+	float: right;
+}
+.bt:hover {
   color: #fff;
   border: 2px outset rgba(25, 25, 100, 0.9);
   background: rgba(25,25,100, 0.9);
+  transform:scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+
+}
+.bt1:hover {
+  color: #fff;
+  border: 2px outset rgba(125, 225, 100, 0.9);
+  background:rgba(125, 225, 100, 0.9);
   transform:scale(1.1);
   transition: 0.2s;
   text-shadow: 1px 1px 1px rgba(0,0,0, 20);
@@ -137,8 +177,8 @@ background-image: url(../img/bg1.jpeg);
 
 background-image: url(../img/bg2.jpeg);
 position: relative;
-overflow-y: scroll;
-overflow-x: hidden;
+
+overflow: hidden;
 
 
 }
@@ -147,18 +187,30 @@ overflow-x: hidden;
 .g-img3 {
 
 background-image: url(../img/bg3.jpeg);
-
+position: relative;
 
 }
 .g-img4 {
 
 background-image: url(../img/bg4.jpeg);
-
+position: relative;
 
 
 }
 
-
+.HIDD{
+	background-color:rgba(255,100,250,0.5);
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 100px;
+	height: 30px;
+	border-radius:10px;
+	border-style:ridge;
+}
+dd{
+	color:white;
+}
 
 @media (min-width:767px) {
 
@@ -177,7 +229,7 @@ section{
 	 float:none;
 }
 .card{
-	background-color: rgba(255,255,255,0.3);
+	
 	color: rgba(0,0,0,1);
 	opacity: 1;
 }
@@ -185,7 +237,11 @@ section{
 	background-color: rgba(255,255,255,0.3);
 	height: 0;
 }
+.g-img2{
+	overflow-y: scroll;
+    overflow-x: hidden;
 
+}
 }
 
 

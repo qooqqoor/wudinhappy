@@ -8,7 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
+
 
 
     <title>屋頂旅遊－練習模式</title>
@@ -19,8 +21,8 @@
 
    <nav class="navbar navbar-expand-lg navbar-light bg-green fixed-top nav1">
 
-        <div class="container">
-          <a class="navbar-brand" href="index.html">屋頂旅遊－海岸之美</a>
+        <div class="container ">
+          <a class="navbar-brand " href="index.html">屋頂旅遊－海岸之美</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
@@ -45,22 +47,24 @@
       <div >
        <div class="div1 fix">
        <section class="g-img1 fix "style="">
-         <img src="img/bg7.jpeg"class="" alt=""style="-webkit-clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);
-clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);position: absolute;height: 100vh;">
+       
+         <img src="img/bg7.jpeg"class="fire" alt=""style="-webkit-clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);
+clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);">
+       
         <div class="row">
           <div class="col-lg-12">
-            <div class="intro-message text-center ">
-              <h1 class="h1"style="line-height:10vh">屋頂旅遊－海岸之美</h1>
-              <h3>生活，需要一點海水來豐富<b>For fun</b></h3>
+            <div class="intro-message text-center justify-content-center">
+              <h1 class="h1 wow pulse"style="line-height:10vh">屋頂旅遊－海岸之美</h1>
+              <h3 class="wow bounceInLeft">生活，需要一點海水來豐富<b>For fun</b></h3>
               <hr class="">
              
                <ul class="list-inline lin1" >
                 
                     <li>
-                        <a href="#"  class="btn btn-default btn-lg"><span class="network-name">Facebook</span></a>
+                        <a href="#"  class="bt btn btn-default btn-lg"><span class="network-name">Facebook</span></a>
                      </li>
                     <li>
-                         <a href="#"  class="btn btn-default btn-lg"><span class="network-name">Line</span></a>
+                         <a href="#"  class="bt1 btn btn-default btn-lg"><span class="network-name">Line</span></a>
                     </li>
               </ul>
               </div>
@@ -77,26 +81,26 @@ clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);position: absolute;height: 1
          </div>
         <div class="row">
           <div class="col-md">
-            <div class="card" style="height: auto;max-width: 100%;">
-          <img src="img/bg5.jpeg" class="card-img-top" alt="...">
+            <div class="card wow fadeInDown " id="bg5"style="height: auto;max-width: 100%;animation-duration:2S ">
+          <img src="img/bg5.png" class="card-img-top" alt="..."style="">
           <div class="card-body">
-            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+            <h3 class="card-text text-center" style="">於礁岩欣賞海浪的波濤</h3>
           </div>
         </div>
           </div>
           <div class="col-md">
-            <div class="card" style="height: auto;max-width: 100%;">
-          <img src="img/bg6.jpeg" class="card-img-top" alt="...">
+            <div class="card  wow fadeInDown" id="bg6" style="height: auto;max-width: 100%;animation-duration:2.5S">
+          <img src="img/bg6.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+            <h3 class="card-text text-center">靜待夕陽西下的瞬間</h3>
           </div>
         </div>
           </div>
           <div class="col-md">
-            <div class="card" style="height: auto;max-width: 100%;">
-          <img src="img/bg8.jpeg" class="card-img-top" alt="...">
+            <div class="card  wow fadeInDown" id="bg8" style="height: auto;max-width: 100%;animation-duration:3S">
+          <img src="img/bg7.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h3 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h3>
+            <h3 class="card-text text-center">與愛人相約於海畔</h3>
           </div>
         </div>
           </div>
@@ -111,7 +115,17 @@ clip-path: polygon(42% 0, 70% 0, 84% 100%, 7% 100%);position: absolute;height: 1
 
       </div>
 
+<div class="HIDD">
+  <dl>
+  <dt class="text-center">聯絡資訊</dt>
+  <dd>連絡電話：0965955268<br>門市位址：台中市沙鹿區上名一街15號<br>電子信箱：qooqwang@gmail.com</dd>
+  </dl>
+
+</div>
+  
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/wow.js"></script>
+      <script src="js/index.js"></script>
   </body>
 </html>
